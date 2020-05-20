@@ -32,10 +32,10 @@ referencia <- referencia %>% mutate(
   wday.name = weekdays(fecha)
   
 ) %>%
-  select(day,hour, wday.name)
+  select(day, hour, wday.name)
 
 
-# Tabla de datos: MENSAJES POR HORA DEL DÍA
+# Tabla de datos: MENSAJES POR HORA DEL D?A
 diasyhoras <- miChat %>%
   select(time, day) %>% 
   mutate( hour = hour(time),
