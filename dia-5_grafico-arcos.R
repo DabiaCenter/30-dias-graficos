@@ -32,7 +32,7 @@ nombres_personajes = c("Rey Ameba", "Reina Moho",
 
 # Diagrama de arco
 
-arcplot(relaciones, labels = nombres_personajes, col.arcs = randomColor(length(edgelist), hue = "pink"),
+arcplot(relaciones, labels = nombres_personajes, col.arcs = randomColor(length(relaciones), hue = "pink"),
         main = "Relación familiar de la familia de Patricio Estrella y Gary", cex.labels = 0.6,
         sub = "Las relaciones hecha solo toman en cuenta tatarabuelos, bisbabuelos, abuelos, tios abuelos, papás e hijos",
         font.sub=3, cex.sub=0.7, horizontal = FALSE)
