@@ -3,9 +3,6 @@ library(readr)
 library(dplyr)
 
 smash <- read_csv("smash_bros.csv")
-smash$puesto <- c(1,2,3,4,5,6,7,8,9,10,11,12)
-smash$puesto <- as.factor(smash$puesto)
-
 
 ggplot(smash, aes(x = reorder(personaje, uso), y = uso, col = puesto, fill = puesto)) +
   geom_segment(aes(xend = personaje, yend = 0), size = 2, show.legend = F) +
@@ -17,7 +14,7 @@ ggplot(smash, aes(x = reorder(personaje, uso), y = uso, col = puesto, fill = pue
                                 "#FF9B02", "#C28220", "#000FFF", "#000000", "#F9F905",
                                 "#1C3A83", "#EEEE99")) +
   coord_flip() +
-  labs(title = "Top 12 personajes más usados de SuperSmash Ultimate en torneos") +
+  labs(title = "Top 12 personajes m?s usados de SuperSmash Ultimate en torneos") +
   xlab("") +
   ylab("Cantidad de usos") +
   theme(text = element_text(family = "sans", size =12),
