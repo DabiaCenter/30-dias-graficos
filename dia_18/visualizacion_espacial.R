@@ -12,7 +12,7 @@ p <- ggplot(mapa_mundi,aes(x=long, y=lat,group= group)) +
 
 #10 paises más poblados
 paises <- c(
-  "China", "India", "United States","Indonesia","Pakistan","Nigeria",
+  "China", "India", "usa","Indonesia","Pakistan","Nigeria",
   "Brazil","Russia","Mexico","Japan")
 
 #acomodo de data frame
